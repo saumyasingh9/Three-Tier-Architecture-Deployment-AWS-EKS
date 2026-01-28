@@ -94,8 +94,8 @@ pipeline {
                 dir('Kubernetes-Manifests-file/Backend') {
                     withCredentials([string(credentialsId: 'github', variable: 'GITHUB_TOKEN')]) {
                         sh '''
-                            git config user.email "aman07pathak@gmail.com"
-                            git config user.name "AmanPathak-DevOps"
+                            git config user.email "saumyasingh24602new@gmail.com"
+                            git config user.name "saumyasingh9"
                             BUILD_NUMBER=${BUILD_NUMBER}
                             echo $BUILD_NUMBER
                             imageTag=$(grep -oP '(?<=backend:)[^ ]+' deployment.yaml)
